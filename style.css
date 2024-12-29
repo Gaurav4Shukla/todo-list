@@ -1,0 +1,415 @@
+/* Default Light Mode */
+body {
+    background-color: #F4F4F4;
+    color: #333333;
+}
+
+header {
+    background-color: #007BFF;
+    color: white;
+}
+
+nav ul li a {
+    color: white;
+}
+
+nav ul li a:hover {
+    color: #f0f0f0;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+input, textarea {
+    background-color: white;
+    border: 1px solid #CCCCCC;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #121212;
+    color: #E0E0E0;
+}
+
+body.dark-mode header {
+    background-color: #1E90FF;
+    color: #121212;
+}
+
+body.dark-mode nav ul li a {
+    color: #1E90FF;
+}
+
+body.dark-mode nav ul li a:hover {
+    color: #1C86EE;
+}
+
+body.dark-mode button {
+    background-color: #1E90FF;
+    color: #121212;
+}
+
+body.dark-mode button:hover {
+    background-color: #1C86EE;
+}
+
+body.dark-mode input, body.dark-mode textarea {
+    background-color: #333333;
+    border: 1px solid #555555;
+}
+
+/* For Sections/Cards */
+.container, .project-item, .experience-item {
+    background-color: #FFFFFF;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+body.dark-mode .container, body.dark-mode .project-item, body.dark-mode .experience-item {
+    background-color: #1F1F1F;
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+}
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Basic styling for the body and background */
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Header Styles */
+header {
+    background: #007BFF;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+/* Navbar Styles */
+nav ul {
+    list-style: none;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f0f0f0;
+}
+
+/* Light Mode Navbar */
+.App.light nav {
+    background-color: #ffffff; /* White background */
+}
+
+.App.light nav ul li a {
+    color: #333; /* Black links */
+}
+
+.App.light nav ul li a:hover {
+    color: #007BFF;
+}
+
+/* Dark Mode Navbar */
+.App.dark nav {
+    background-color: #333; /* Dark background */
+}
+
+.App.dark nav ul li a {
+    color: white; /* White links */
+}
+
+.App.dark nav ul li a:hover {
+    color: #f0f0f0;
+}
+
+/* Main Content Styling */
+main {
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+/* Container for each section */
+.container {
+    margin-bottom: 50px;
+}
+
+.container h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* About Section */
+#about p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Experience Section */
+.experience-item {
+    background: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.experience-item h3 {
+    color: #007BFF;
+}
+
+/* Skills Section */
+#skills-react {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#skills-react li {
+    background: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: background 0.3s, transform 0.3s;
+}
+
+#skills-react li:hover {
+    background: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Projects Section */
+.project-item {
+    background: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+}
+
+.project-item h3 {
+    color: #007BFF;
+}
+
+.project-item:hover {
+    transform: scale(1.05);
+}
+
+/* Contact Section */
+#contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px;
+    margin-top: 20px;
+}
+
+#contact form input,
+#contact form button {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+#contact form button {
+    background: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#contact form button:hover {
+    background: #0056b3;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    nav ul {
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    #skills-react {
+        justify-content: center;
+    }
+
+    .container {
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    #contact form {
+        width: 100%;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.container {
+    animation: fadeIn 1s ease-out;
+}
+
+.project-item, .experience-item, #contact form {
+    animation: fadeIn 1s ease-out;
+    animation-delay: 0.5s;
+}
+
+/* Light Mode Styles (Default) */
+.App.light {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.App.light header {
+    background-color: #007BFF;
+}
+
+.App.light .container {
+    background-color: white;
+    color: #333;
+}
+
+.App.light .project-item, .App.light .experience-item {
+    background-color: #fff;
+}
+
+.App.light #contact form input,
+.App.light #contact form button {
+    background-color: white;
+}
+
+/* Dark Mode Styles */
+.App.dark {
+    background-color: #121212;
+    color: #E0E0E0;
+}
+
+.App.dark header {
+    background-color: grey;
+}
+
+.App.dark nav {
+    background-color: #333; /* Dark background */
+}
+
+.App.dark nav ul li a {
+    color: white; /* White links */
+}
+
+.App.dark nav ul li a:hover {
+    color: #f0f0f0;
+}
+
+.App.dark .container {
+    background-color: #1F1F1F;
+    color: #E0E0E0;
+}
+
+.App.dark .project-item, .App.dark .experience-item {
+    background-color: #333;
+}
+
+.App.dark #contact form input,
+.App.dark #contact form button {
+    background-color: #444;
+    color: #E0E0E0;
+}
+
+/* Light/Dark Mode Button */
+#mode-toggle {
+    padding: 10px 20px;
+    background-color: #333;  /* Dark background for toggle button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#mode-toggle:hover {
+    background-color: #555;  /* Darker shade for hover */
+}
